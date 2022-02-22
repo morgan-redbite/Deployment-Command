@@ -10,7 +10,7 @@ yum install docker -y
 docker --version 
 
 
-Service/Start/Shutdown
+Status/Start/Shutdown
 
 start docker services
 service docker start
