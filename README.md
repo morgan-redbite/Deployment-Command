@@ -27,13 +27,13 @@ docker exec -it {container-name} /bin/bash
 
 
 =========================================================================== <br>
-Dockerfile
-FROM centos:latest
-RUN yum install java -y
-RUN mkdir /opt/tomcat
-WORKDIR /opt/tomcat
-ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz .
-RUN tar -xvzf apache-tomcat-10.0.16.tar.gz
-RUN mv apache-tomcat-9.0.54/* /opt/tomcat
-EXPOSE 8080
-CMD["/opt/tomcat/bin/catalina.sh", "run"]
+Dockerfile <br>
+FROM centos:latest <br>
+RUN yum install java -y <br>
+RUN mkdir /opt/tomcat <br>
+WORKDIR /opt/tomcat <br>
+ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz . <br>
+RUN tar -xvzf apache-tomcat-10.0.16.tar.gz <br>
+RUN mv apache-tomcat-9.0.54/* /opt/tomcat <br>
+EXPOSE 8080 <br>
+CMD["/opt/tomcat/bin/catalina.sh", "run"] <br>
