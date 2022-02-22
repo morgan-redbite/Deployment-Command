@@ -26,7 +26,7 @@ Log into container
 docker exec -it {container-name} /bin/bash
 
 
-===========================================================================
+=========================================================================== <br>
 Dockerfile
 FROM centos:latest
 RUN yum install java -y
